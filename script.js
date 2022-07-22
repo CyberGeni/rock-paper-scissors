@@ -19,18 +19,26 @@ function playRound(playerSelection, computerSelection) {
         return 'You lose, Scissors beats Paper!';
     } else if (playerSelection === 'scissors' && computerSelection === 'rock') {
         return 'You lose, Rock beats Scissors!';
-    } else {
+    } else if (playerSelection === 'scissors' && computerSelection === 'paper'){
         return 'You win, Scissors beats Paper!';
+    } else {
+        return 'Invalid input!';
     }
 }
+// using do/while loop 
 
-rounds = 0
-do {
+
+// rounds = 0
+// do {
+//     const playerSelection = prompt('Rock, Paper or Scissors? ');
+//     const computerSelection = computerPlay();
+//     console.log(playRound(playerSelection, computerSelection));
+//     rounds++;
+// }
+// while (rounds < 5)
+
+for (let rounds = 0; rounds < 5; rounds++) {
     const playerSelection = prompt('Rock, Paper or Scissors? ');
     const computerSelection = computerPlay();
     console.log(playRound(playerSelection, computerSelection));
-    rounds++;
-}
-while (rounds < 5)
-
- 
+ }
