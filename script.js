@@ -23,6 +23,6 @@ function playRound(playerSelection, computerSelection) {
         return 'You win, Scissors beats Paper!';
     }
 }
-const playerSelection = "rock";
+const playerSelection = prompt('Rock, Paper or Scissors? ');
 const computerSelection = computerPlay();
 console.log(playRound(playerSelection, computerSelection));
