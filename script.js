@@ -5,7 +5,7 @@ function computerPlay() {
 }
 computerPlay()
 
-
+// human gameplay
 function playRound(playerSelection, computerSelection) {
     if (playerSelection === computerSelection) {
         return 'It\s a tie!';
@@ -23,6 +23,14 @@ function playRound(playerSelection, computerSelection) {
         return 'You win, Scissors beats Paper!';
     }
 }
-const playerSelection = "rock";
-const computerSelection = computerPlay();
-console.log(playRound(playerSelection, computerSelection));
+
+rounds = 0
+do {
+    const playerSelection = prompt('Rock, Paper or Scissors? ');
+    const computerSelection = computerPlay();
+    console.log(playRound(playerSelection, computerSelection));
+    rounds++;
+}
+while (rounds < 5)
+
+ 
