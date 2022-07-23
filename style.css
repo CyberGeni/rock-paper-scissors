@@ -4,12 +4,17 @@ body {
     background-size: cover;
 }
 #rock {
-    border: 8px solid blue;
-    border-image: linear-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+    outline: 12px solid hsl(349, 70%, 56%);
+    box-shadow: 0px 6px 0 12px hsl(349, 50%, 32%),
+                inset 0px 3px 0 1px rgba(94, 112, 131, 0.473);
 }
 #paper {
-
+    outline: 12px solid hsl(230, 89%, 65%);
+    box-shadow: 0px 6px 0 12px hsl(230, 54%, 41%) ,
+                inset 0px 3px 0 1px rgba(94, 112, 131, 0.473);
 }
 #scissors {
-
+    outline: 12px solid hsl(40, 84%, 53%);
+    box-shadow: 0px 6px 0 12px hsl(39, 89%, 33%),
+                inset 0px 3px 0 1px rgba(94, 112, 131, 0.473);
 }
