@@ -1,17 +1,28 @@
+// fetch all the user responses from the html
+let rock = document.getElementById('rock');
+let paper = document.getElementById('paper');
+let scissors = document.getElementById('scissors');
+let score = document.getElementById('score');
 
-let playerScore = 0
-let computerScore = 0
+
+
+rock.addEventListener("click", myFunction);
+
+function myFunction() {
+  alert('you clicked rock')
+  console.log('you clicked rock')
+}
+
 
 // computer gameplay
 function computerPlay() {
-    choices = ['rock', 'paper', 'scissors'];
+    choices = [rock, paper, scissors];
     return choices[Math.floor(Math.random() * choices.length)];
 }
 computerPlay()
 
 // human gameplay
 function playRound(playerSelection, computerSelection) {
-    
     if (playerSelection === computerSelection) {
         return 'It\s a tie!';
     } else if (playerSelection === 'rock' && computerSelection === 'paper') {
@@ -47,13 +58,13 @@ function playRound(playerSelection, computerSelection) {
 // }
 // while (rounds < 5)
 
-function game () {
-    for (let rounds = 0; rounds < 5; rounds++) {
-        const playerSelection = prompt('Rock, Paper or Scissors? ');
-        const computerSelection = computerPlay();
-        console.log(playRound(playerSelection, computerSelection));
-    }
-    console.log(`Player: ${playerScore} Computer: ${computerScore}`);
-}
-game()
+// function game () {
+//     for (let rounds = 0; rounds < 5; rounds++) {
+//         const playerSelection = prompt('Rock, Paper or Scissors? ');
+//         const computerSelection = computerPlay();
+//         console.log(playRound(playerSelection, computerSelection));
+//     }
+//     console.log(`Player: ${playerScore} Computer: ${computerScore}`);
+// }
+// game()
 
