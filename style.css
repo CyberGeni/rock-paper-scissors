@@ -18,3 +18,21 @@ body {
     box-shadow: 0px 6px 0 12px hsl(39, 89%, 33%),
                 inset 0px 3px 0 1px rgba(94, 112, 131, 0.473);
 }
+
+@media (min-width: 768px) { 
+    #rock {
+        outline: 22px solid hsl(349, 70%, 56%);
+        box-shadow: 0px 13px 0 20px hsl(349, 50%, 32%),
+                    inset 0px 6px 0 3px rgba(94, 112, 131, 0.473);
+    }
+    #paper {
+        outline: 22px solid hsl(230, 89%, 65%);
+        box-shadow: 0px 13px 0 20px hsl(230, 54%, 41%) ,
+                    inset 0px 6px 0 3px rgba(94, 112, 131, 0.473);
+    }
+    #scissors {
+        outline: 22px solid hsl(40, 84%, 53%);
+        box-shadow: 0px 13px 0 20px hsl(39, 89%, 33%),
+                    inset 0px 6px 0 3px rgba(94, 112, 131, 0.473);
+    }
+}
